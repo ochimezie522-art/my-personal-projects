@@ -66,25 +66,15 @@
 
 ### Scope
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  In Scope: "Transaction-level data for Regions A–E, Jan 2023–Jun 2024.
-             Analysis covers revenue, return rates, and product category performance."
-  Out of Scope: "Customer demographics and marketing spend data were excluded -
-                 demographic data was incomplete for two regions, and marketing
-                 data sits in a separate system outside this engagement."
 
-  WHAT TO AVOID:
-  ❌ Leaving Out of Scope blank. This is the section that protects your credibility.
-     If you don't define the fence, reviewers assume you missed things.
 -->
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | [What is included - data sources, time periods, segments] |
-| **Out of Scope** | [What you explicitly excluded - and a brief reason why] |
-| **Time Period** | [Date range of the data or the project itself] |
-| **Granularity** | [Unit of analysis - row-level, daily aggregates, per-user, etc.] |
+| **In Scope** |Superstore sales data from the US market, covering all 4 regions (West, East, Central, South), all 3 segments (Consumer, Corporate, Home Office), and all 3 product categories (Technology, Furniture, Office Supplies)|
+| **Out of Scope** |Customer names, returns, and shipping logistics were excluded because they were not needed to answer the core question: why profit did not match sales. No forecasting or price optimization modelling.|
+| **Time Period** |3rd January 2014 to 30th December 2017 (4 years of order data)|
+| **Granularity** |One row = one order line (one product in one order). 9,994 order lines in total.|
 
 ### Tools & Technologies
 
