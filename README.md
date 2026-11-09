@@ -53,28 +53,12 @@
 
 ## 2. Objectives
 
-<!--
-  Write objectives that are specific enough to succeed or fail.
-  Use action-oriented verbs: Identify, Determine, Quantify, Build, Evaluate.
 
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Determine whether customer churn rate correlates with support ticket volume."
-  ✅ "Identify the top three revenue-driving product categories across all regions."
-  ✅ "Build a reproducible pipeline that ingests and cleans daily sales exports."
+- **Primary Objective:** To find where Superstore makes and loses money, and explain why profit of $286.40k did not match sales of $2.3m from 2014 to 2017.
+- **Secondary Objective 1:** To measure performance by Category, Region, and Country to identify the highest and lowest profit products and locations.
+- **Secondary Objective 2:** To test the effect of Discount on Profit and find out if high discounts are increasing sales but reducing profit.
+- **Secondary Objective 3:** To build a Power BI Overview and Details dashboard that a manager can read in 5 seconds to make pricing and discount decisions.
 
-  WHAT TO AVOID:
-  ❌ "Explore the data."
-  ❌ "Gain insights."
-  ❌ "Understand trends."
-  (These can't fail - which means they can't succeed either.)
--->
-
-- **Primary Objective:** [The main thing you set out to do]
-- **Secondary Objective 1:** [Supporting goal]
-- **Secondary Objective 2:** [Supporting goal]
-- **Secondary Objective 3:** [Remove if not applicable]
-
-> 💡 *Every analysis decision in this project traces back to one of these objectives.*
 
 ---
 
