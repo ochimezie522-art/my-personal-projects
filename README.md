@@ -1,18 +1,18 @@
-# [Project Title]
-> *One sentence. What did you analyze, build, or solve - and why does it matter?*
+# Superstore Sales Analysis
+> *I analyzed 9,994 order lines across 5,009 unique orders from 2014 to 2017, built an interactive Power BI dashboard tracking sales, profit and margin, and solved why profit did not match sales by exposing that Furniture returns the lowest profit of the three product categories and losses are concentrated in Tables, which matters because it shows exactly where to fix pricing and discounting to protect profit.*
 
 ---
 
 ## ⚙️ Project Type Flags
-> *Check what applies. This helps reviewers and collaborators understand the nature of the work at a glance. Delete this block before publishing.*
 
-- [ ] Exploratory Data Analysis (EDA)
+
+- [x] Exploratory Data Analysis (EDA)
 - [ ] SQL Analysis / Querying
-- [ ] Dashboard / Data Visualization
+- [x] Dashboard / Data Visualization
 - [ ] Data Pipeline / ETL
 - [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
-- [ ] End-to-End (multiple of the above)
+- [x] Data Cleaning / Wrangling
+- [x] End-to-End (multiple of the above)
 - [ ] Other: ___________
 
 ---
@@ -37,32 +37,17 @@
 
 ## 1. Project Overview
 
-<!--
-  Write 3–5 sentences in plain language.
-  Cover: context → problem → approach → outcome.
-  Read it out loud. If it sounds like a form - rewrite it.
 
-  WHAT GOOD LOOKS LIKE:
-  "A mid-size retail business was seeing inconsistent revenue across
-  its regional stores but couldn't identify the root cause. This project
-  explored 18 months of transaction data across five regions to determine
-  whether underperformance was driven by sales volume, pricing, or return
-  rates. The analysis revealed that one region's gap was almost entirely
-  explained by an unusually high return rate on a single product category -
-  a finding invisible in the company's top-level reporting."
+ 
 
-  WHAT TO AVOID:
-  "This project analyzes sales data to find trends and insights."
-  (Too vague. Could describe 10,000 projects. Describes none of them.)
--->
 
-**Context:** [The business, research, or personal situation that motivated this project.]
+**Context:** Superstore is a US retail company selling Furniture, Office Supplies, and Technology across 4 regions. Sales were growing from 2014 to 2017, but management was concerned that profit was not matching sales, so they needed a clear view of where money was being made and lost. 
 
-**Problem Statement:** [The specific question or challenge you were addressing.]
+**Problem Statement:** With total sales of $2.3m but a profit margin of only 12.5%, where is Superstore losing profit, and is discounting helping or hurting performance?
 
-**Approach:** [In 1–2 sentences - how did you tackle it?]
+**Approach:** I analyzed 9,994 order lines across 5,009 unique orders from 2014 to 2017, validated the data for duplicates and missing values, then built an interactive dashboard to track sales, profit, margin, and discount by category, region, and year using DAX measures.
 
-**Outcome:** [What did you produce or discover?]
+**Outcome:** I built a 2-page Power BI dashboard covering 9,994 orders from 2014 to 2017, showing $2.3m in total sales, $286.40k in total profit, and a 12.5% profit margin. The dashboard shows that profit is uneven: Technology drives the highest profit while Furniture returns the lowest profit of the three product categories, and the West region leads with $108.42k (37.9% of profit) while Central is lowest at $39.71k (13.9% of profit). It also shows that high discount reduces profit, with the biggest losses concentrated in Tables, including BoxOffice By Design Rectangular Table and Balt Solid Wood Round Tables. 
 
 ---
 
