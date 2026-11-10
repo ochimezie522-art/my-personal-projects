@@ -67,7 +67,7 @@
 ### Scope
 
 
--->
+
 
 | Dimension | Details |
 |-----------|---------|
@@ -78,41 +78,28 @@
 
 ### Tools & Technologies
 
-<!--
-  List only what you actually used on this project.
-  This is not your skills section - it's the project's technical context.
--->
 
 | Category | Tool(s) Used |
 |----------|-------------|
-| Data Storage | [e.g., PostgreSQL, CSV files, BigQuery, S3] |
-| Data Processing | [e.g., Python, R, SQL, Excel, dbt] |
-| Analysis | [e.g., pandas, dplyr, custom SQL queries] |
-| Visualization | [e.g., Matplotlib, Tableau, Power BI, Looker] |
-| Version Control | [e.g., Git / GitHub] |
-| Documentation | [e.g., Markdown, Notion] |
-| Other | [Any additional tools] |
+| Data Storage |CSV files, Excel (.xlsx)|
+| Data Processing |Excel|
+| Analysis |Excel, Power BI DAX measures|
+| Visualization |Power BI|
+| Version Control |Git, GitHub|
+| Documentation |Markdown, GitHub README|
+| Other |None|
 
 ---
 
 ## 4. Repository Structure
 
 ```
-[project-root]/
+[superstore-sales-analysis]/
 │
 ├── data/
 │   ├── raw/                  # Original, unmodified source data - never edited
 │   ├── processed/            # Cleaned and transformed data
-│   └── external/             # Reference data, lookup tables, third-party files
-│
-├── notebooks/                # Jupyter, R Markdown, or Colab notebooks
-│
-├── scripts/                  # Reusable .py, .R, or .sh processing files
-│
-├── queries/                  # SQL files (retain this folder for SQL-heavy projects)
-│   ├── exploratory/          # Ad-hoc or investigative queries
-│   ├── transformations/      # Cleaning and reshaping logic
-│   └── final/                # Production-ready or presentation queries
+│── final/                    # Production-ready or presentation queries
 │
 ├── reports/                  # Final outputs: PDFs, slide decks, Word docs
 │
