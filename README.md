@@ -99,30 +99,33 @@
 ## Overview
 This project analyzes Superstore sales data to understand sales performance, profitability, customer trends, and presents the findings in an interactive Power BI dashboard.
 
+## Business Questions
+- Which products and categories drive the most sales and profit?
+- Which regions are sales performing best?
+- How do sales trend over time?
+
+## Tools Used
+- Power BI - Dashboard & Visualization
+- Excel - Data Cleaning and Validation
+- GitHub - Project Documentation
+
+## Key Insights
+- Technology is the top-performing product category
+- The West region leads in sales and generates the highest profit
+- Sales grew steadily from 2014 to 2017, with the strongest growth in 2016 to 2017
+
+## Files
+- 'data/' - Raw sales data
+- 'dashboard/' - Power BI file (.pbix) & dashboard PDF
+- 'visuals/' - Dashboard screenshots
+
+## How to View Dashboard File
+1. Open the 'dashboard/' folder
+2. Download the '.pbix' file
+3. Open it in Power BI Desktop
+
+
 ## 5. Data Workflow
-
-<!--
-  Show how data moved through your project - from source to output.
-  Every transformation decision should be traceable here.
-
-  WHAT GOOD LOOKS LIKE:
-  1. Source: "Monthly CSV exports pulled from the internal POS system.
-              Five files, one per region, covering Jan 2023–Jun 2024."
-  2. Ingestion: "Loaded into Python using pandas. Files concatenated into
-                 a single dataframe (approx. 340,000 rows)."
-  3. Cleaning: "Removed 1.2% of rows with null transaction IDs.
-                Standardised date formats across regional files.
-                Resolved product category naming inconsistencies (3 variants → 1)."
-  4. Transformation: "Created a returns_rate field at product-category level.
-                      Aggregated to weekly and regional grain for trend analysis."
-  5. Analysis: "Descriptive statistics, regional comparison, return rate
-                segmentation by product category."
-  6. Output: "Summary report (PDF), annotated notebook, processed CSV."
-
-  WHAT TO AVOID:
-  ❌ "Data was cleaned and analysed." (No chain. No decisions. No trust.)
--->
-
 ```
 [Data Source(s)]
       ↓
@@ -135,10 +138,10 @@ This project analyzes Superstore sales data to understand sales performance, pro
 [Output / Visualisation / Reporting]
 ```
 
-1. **Source:** [Where did the data come from? Format, size, access method.]
-2. **Ingestion:** [How was it brought in?]
-3. **Cleaning:** [What issues did you find and fix?]
-4. **Transformation:** [What new fields, aggregations, or structures did you create?]
+1. **Source:** Superstore Sales Dataset (CSV file, 2.3MB), gotten from Kaggle.com
+2. **Ingestion:** Loaded the CSV file into Excel for cleaning, then imported into Power BI Desktop
+3. **Cleaning:** Checked for duplicates, missing values and errors. None was found (dataset was already cleaned)
+4. **Transformation:** In Power BI, I created measures for Total Sales, Total Profit, and Profit Margin
 5. **Analysis:** [What methods - statistical, visual, query-based, model-based?]
 6. **Output:** [What form do the results take?]
 
