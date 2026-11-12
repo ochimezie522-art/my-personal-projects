@@ -219,9 +219,9 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 
 Aspiring Data Analyst - Power BI & Excel
 
-- 🔗 [LinkedIn URL]
+- 🔗 https://www.linkedin.com/in/okafor-chimezie-805952415?utm_source=share_via&utm_content=profile&utm_medium=member_android
 - 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+- 📧 ochimezie522@gmail.com
 
 ---
 
