@@ -126,7 +126,7 @@ This project analyzes Superstore sales data to understand sales performance, pro
 
 
 ## 5. Data Workflow
-```
+
 [Data Source(s)]
       ↓
 [Ingestion / Collection Method]
@@ -145,6 +145,7 @@ This project analyzes Superstore sales data to understand sales performance, pro
 5. **Analysis:** I compared sales and profit by Year, Category, and Region. I also analyzed Top 10 profit-making vs Top 10 loss-making products, and checked Discount vs Profit to see how discounts affect profit.
 6. **Output:** A 2-page interactive Power BI dashboard - Page 1 is the Cover Page, Page 2 is the main dashboard with KPI cards, slicers, charts, and Top 10 / Bottom 10 tables. Screenshots are saved in the `visuals/` folder. 
 
+---
 
 ## 6. Analysis & Metrics
 
@@ -164,73 +165,35 @@ This was an exploratory, descriptive analysis. I did not test a fixed hypothesis
 
 - Descriptive analysis: Summed sales, profit, and orders by Year, Category, Region, and Product
 - Visual comparison: Used line charts, bar charts, and donut charts in Power BI to compare groups over time
-- Ranking: Ranked Top 10
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
+- Ranking: Ranked Top 10 profit-making vs Top 10 loss-making products to find winners and losers
+- Correlation check: Compared Discount vs Profit to see if higher discounts are linked to lower profit
 
 ---
 
-## 9. Key Insights
+## 7. Key Insights
 
-<!--
-  Findings + implications. Not just what happened - what it means.
+**Insight 1: Technology drives the business, Furniture drags profit**
+Technology is the top-performing product category for both sales and profit. Furniture has high sales but lower profit, which suggests high costs or heavy discounts are eating its profit.
 
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Return rates, not sales volume, explain Region A's underperformance.
-      Region A's return rate on home goods was 34% - more than double the
-      company average. Revenue was not lost at the point of sale; it was
-      lost post-sale through refunds. This points to a fulfilment or
-      product quality issue specific to that region, not a demand problem."
+**Insight 2: The West region carries the business**
+The West region leads with $108.42k in profit, which is 37.9% of total profit. It outperforms East, Central, and South. The business should protect and grow the West while investigating why Central and South are lagging.
 
-  WHAT TO AVOID:
-  ❌ "Region A had lower revenue than other regions in Q4."
-     (That's an observation. It describes what happened.
-      An insight says what it means and where to look next.)
+**Insight 3: Discounts are hurting profit**
+Products with high discounts, especially in Furniture and Office Supplies, appear in the Top 10 loss-making products list. This suggests that higher discounts are linked to lower profit, and some discounts are too high.
 
-  Aim for 3–6 insights. Quality over quantity.
--->
-
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
-
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
-
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
-
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 4: A few products make most of the profit, a few lose most of it**
+Profit is not spread evenly. The Top 10 profit-making products drive a large share of the $286.40k total profit, while the Top 10 loss-making products pull it down. Focusing on the winners and fixing or stopping the losers would improve the overall 12.5% profit margin.
 
 ---
 
 ## 10. Recommendations
 
-<!--
-  Action-oriented. Addressed to a real audience.
-  Tied explicitly to the insight that supports each one.
-
-  WHAT GOOD LOOKS LIKE:
-  Priority: High
-  Recommendation: "Conduct a fulfilment audit for home goods deliveries
-                   in Region A - specifically investigating whether returns
-                   correlate with a particular warehouse, carrier, or SKU batch."
-  Based On: Insight 1 - return rate anomaly in Region A
-  Owner: Operations / Supply Chain team
-
-  WHAT TO AVOID:
-  ❌ "Improve the return rate."
-     (Not actionable. Doesn't say who, how, or where to start.)
-  ❌ "Further analysis is needed."
-     (This is a placeholder, not a recommendation.)
--->
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Medium | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
+| High | Review and cap discounts on Furniture and Office Supplies, especially for products in the Top 10 loss-making list. Do not give high discounts without approval | Insight 3 - Discounts are hurting profit | Sales Manager |
+| Medium | Protect and grow the West region, and push Technology products more in Central and South to copy what is working in the West | Insight 1 and 2 - Technology leads, West carries the business | Regional / Marketing Manager |
+| Low | Review the Top 10 loss-making products and track Profit Margin monthly in Power BI, so the team can see early if discounts are eating profit again | Insight 4 - A few products lose most of the profit, margin is only 12,5% | Data Analyst / Product Manager |
 
 ---
 
