@@ -209,7 +209,7 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 - The analysis focuses on 2014-2017 sales data in the file. I assumed this period is enough to show sales and profit trends.
 
 ### Limitations
-- The dataset does not include customer age, customer feedback, or marketing costs. So I could not analyze why customers buy or how much it costs to get them.
+- The dataset does not include customer age, customer feedback, or marketing costs. So I could not analyze why customers chose a product or how much was spent on advertising to get them.
 - The dataset does not include stock levels or delivery costs. So I could not analyze if loss-making products were caused by stock or shipping issues.
 - This project looks like past sales only. It does not predict future sales or customer behaviour.
 - The data is from one sample store dataset, not a real life company. So the results may not apply to all retail businesses.
