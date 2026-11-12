@@ -186,7 +186,7 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 
 ---
 
-## 10. Recommendations
+## 8. Recommendations
 
 
 | Priority | Recommendation | Based On | Suggested Owner |
@@ -197,74 +197,27 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 
 ---
 
-## 11. Assumptions & Limitations
-
-<!--
-  WHAT GOOD LOOKS LIKE:
-  Assumption: "Transaction records were assumed to be complete for all five regions.
-               No validation was performed against source system record counts."
-  Limitation: "The analysis cannot distinguish between returns initiated by
-               the customer vs. returns initiated by the business (e.g., recalls).
-               If business-initiated returns are concentrated in Region A, the
-               return rate finding may reflect a policy decision, not a quality issue."
-
-  WHAT TO AVOID:
-  ❌ Leaving this section blank or writing "None known."
-     Every project has limitations. Documenting them is a sign of
-     analytical maturity - not a confession of failure.
--->
+## 9. Assumptions & Limitations
 
 ### Assumptions
-- [What did you treat as true without being able to verify?]
-- [What simplifications did you make for scope or feasibility?]
-- [What domain rules or definitions did you accept as given?]
+- The data in the Superstore file is correct and complete. I treated Sales, Profit, Discount, and Dates as given without being able to verify them with real the company.
+- Profit is calculated as Sales minus Cost. I accepted the Profit column as given and did not recalculate costs.
+- The analysis focuses on 2014-2017 sales data in the file. I assumed this period is enough to show sales and profit trends.
 
 ### Limitations
-- [What gaps exist in the data?]
-- [What analysis was out of scope but could affect interpretation?]
-- [What would a more rigorous version of this project include?]
-- [Are there known biases in the data source or collection method?]
+- The dataset does not include customer age, customer feedback, or marketing costs. So I could not analyze why customers buy or how much it costs to get them.
+- The dataset does not include stock levels or delivery costs. So I could not analyze if loss-making products were caused by stock or shipping issues.
+- This project looks like past sales only. It does not predict future sales or customer behaviour.
+- The data is from one sample store dataset, not a real life company. So the results may not apply to all retail businesses.
 
-> *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
-
----
-
-## 12. Future Enhancements
-
-<!--
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Automate the monthly data pull from the POS export folder using
-      a scheduled Python script, replacing the current manual process."
-  ✅ "Expand the return rate analysis to include carrier-level data,
-      which was unavailable in this dataset but exists in the logistics system."
-
-  WHAT TO AVOID:
-  ❌ "Add a machine learning model."
-     (Vague, and disconnected from the actual findings of this project.)
-  ❌ Listing aspirational features that don't follow logically from the work.
--->
-
-- [ ] [Enhancement 1 - specific and traceable to a real gap in this project]
-- [ ] [Enhancement 2]
-- [ ] [Enhancement 3]
-- [ ] [Enhancement 4]
-
----
-
-## 13. Deliverables
-
-| Deliverable | Description | Location |
-|-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
 
 ---
 
 ## 14. Author
 
-**[Your Name]**
-[Your role or title - current or target]
+**Okafor Chimezie Paul**
+
+Aspiring Data Analyst - Power BI & Excel
 
 - 🔗 [LinkedIn URL]
 - 💼 [Portfolio or GitHub profile URL]
@@ -272,5 +225,5 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 
 ---
 
-*Last updated: [Month YYYY]*
-*If this template helped you, consider starring the repository.*
+*Last updated: November 2026*
+
