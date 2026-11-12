@@ -217,7 +217,7 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 
 ---
 
-## 14. Author
+## 10. Author
 
 **Okafor Chimezie Paul**
 
