@@ -204,7 +204,7 @@ Profit is not spread evenly. The Top 10 profit-making products drive a large sha
 ## 9. Assumptions & Limitations
 
 ### Assumptions
-- The data in the Superstore file is correct and complete. I treated Sales, Profit, Discount, and Dates as given without being able to verify them with real the company.
+- The data in the Superstore file is correct and complete. I treated Sales, Profit, Discount, and Dates as given without being able to verify them with the real company.
 - Profit is calculated as Sales minus Cost. I accepted the Profit column as given and did not recalculate costs.
 - The analysis focuses on 2014-2017 sales data in the file. I assumed this period is enough to show sales and profit trends.
 
