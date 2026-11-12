@@ -173,15 +173,19 @@ This was an exploratory, descriptive analysis. I did not test a fixed hypothesis
 ## 7. Key Insights
 
 **Insight 1: Technology drives the business, Furniture drags profit**
+
 Technology is the top-performing product category for both sales and profit. Furniture has high sales but lower profit, which suggests high costs or heavy discounts are eating its profit.
 
 **Insight 2: The West region carries the business**
+
 The West region leads with $108.42k in profit, which is 37.9% of total profit. It outperforms East, Central, and South. The business should protect and grow the West while investigating why Central and South are lagging.
 
 **Insight 3: Discounts are hurting profit**
+
 Products with high discounts, especially in Furniture and Office Supplies, appear in the Top 10 loss-making products list. This suggests that higher discounts are linked to lower profit, and some discounts are too high.
 
 **Insight 4: A few products make most of the profit, a few lose most of it**
+
 Profit is not spread evenly. The Top 10 profit-making products drive a large share of the $286.40k total profit, while the Top 10 loss-making products pull it down. Focusing on the winners and fixing or stopping the losers would improve the overall 12.5% profit margin.
 
 ---
