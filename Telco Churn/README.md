@@ -113,13 +113,13 @@
 │
 ├── project_metadata.yml      # (not used)
 └── README.md                 # You are here
+
+
+
+
+
+
 ```
-
-
-
-
-
-
 ## 5. Data Workflow
 
 [Data Source(s)]
@@ -139,8 +139,8 @@
 4. **Transformation:** I created DAX measures in Power BI: Total Customers, Churned Customers, Churned Rate %, and Revenue Lost.
 5. **Analysis:** Descriptive analysis in Power BI - churn by Contract, Tenure, Payment Method, Internet Service and Monthly Charges. No Python or SQL used.
 6. **Output:** A 2-page interactive Power BI dashboard. Screenshots in `visuals/` folder.
----
 
+```
 ## 6. Analysis & Metrics
 
 ### Analytical Approach
@@ -180,8 +180,8 @@ Customers who pay with Electronic check have a higher churn rate than those who 
 **Insight 4: Fiber Optic + higher Monthly Charges = higher churn**
 
 Customers with Fiber Optic internet and higher MonthlyCharges churn more than DSL customers. This suggests price and service value may be pushing customers away.
----
 
+---
 ## 8. Recommendations
 
 
