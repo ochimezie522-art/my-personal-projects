@@ -54,11 +54,10 @@
 ## 2. Objectives
 
 
-- **Primary Objective:** To find where Superstore makes and loses money, and explain why profit of $286.40k did not match sales of $2.3m from 2014 to 2017.
-- **Secondary Objective 1:** To measure performance by Category, Region, and Country to identify the highest and lowest profit products and locations.
-- **Secondary Objective 2:** To test the effect of Discount on Profit and find out if high discounts are increasing sales but reducing profit.
-- **Secondary Objective 3:** To build a Power BI Overview and Details dashboard that a manager can read in 5 seconds to make pricing and discount decisions.
-
+- **Primary Objective:** To identify which customers are churning, why they are leaving, and how much lifetime revenue is being lost, so the company can reduce churn and retain revenue.
+- **Secondary Objective 1:** To measure the overall churn rate and the total lifetime revenue represented by churned customers.
+- **Secondary Objective 2:** To find the customer segments with the highest churn risk - by contract type, internet service, tenure, payment method, and monthly charges.
+- **Secondary Objective 3:** To build an interactive Power BI dashboard that lets managers filter by Contract and InternetService to explore churn patterns and take actions.
 
 ---
 
@@ -71,10 +70,10 @@
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** |Superstore sales data from the US market, covering all 4 regions (West, East, Central, South), all 3 segments (Consumer, Corporate, Home Office), and all 3 product categories (Technology, Furniture, Office Supplies)|
-| **Out of Scope** |Customer names, returns, and shipping logistics were excluded because they were not needed to answer the core question: why profit did not match sales. No forecasting or price optimization modelling.|
-| **Time Period** |3rd January 2014 to 30th December 2017 (4 years of order data)|
-| **Granularity** |One row = one order line (one product in one order). 9,994 order lines in total.|
+| **In Scope** |Telco Customer Churn dataset from Kaggle. 7,032 customers after cleaning. Analysis of churn by contract type, internet service, tenure group, payment method, and monthly charges. KPIs: Total Customers, Churned Customers, Churn Rate, and TotalCharges of churned customers. Interactive dashboard with Contract and InternetService slicers.|
+| **Out of Scope** |No churn prediction / machine learning model - this is descriptive analysis, not predictive. No customer names, call logs, network quality, or customer satisfaction data - they were not in the dataset. No causal claim that Fiber optic causes churn, only that it is associated with higher churn.|
+| **Time Period** |No calendar dates in the dataset. It is a cross-sectional snapshot of customers. Tenure ranges from 0 to 72 months with the company.|
+| **Granularity** |One row = one customer. All analysis is at customer level, then aggregated by segment.|
 
 ### Tools & Technologies
 
@@ -94,35 +93,8 @@
 ## 4. Repository Structure
 
 ```
-[superstore-sales-analysis]/
 
-## Overview
-This project analyzes Superstore sales data to understand sales performance, profitability, customer trends, and presents the findings in an interactive Power BI dashboard.
 
-## Business Questions
-- Which products and categories drive the most sales and profit?
-- Which regions are sales performing best?
-- How do sales trend over time?
-
-## Tools Used
-- Power BI - Dashboard & Visualization
-- Excel - Data Cleaning and Validation
-- GitHub - Project Documentation
-
-## Key Insights
-- Technology is the top-performing product category
-- The West region leads in sales and generates the highest profit
-- Sales grew steadily from 2014 to 2017, with the strongest growth in 2016 to 2017
-
-## Files
-- `data/` - Raw sales data
-- `dashboard/` - Power BI file (.pbix) & dashboard PDF
-- `visuals/` - Dashboard screenshots
-
-## How to View Dashboard File
-1. Open the `dashboard/` folder
-2. Download the `.pbix` file
-3. Open it in Power BI Desktop
 
 
 ## 5. Data Workflow
