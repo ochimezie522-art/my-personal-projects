@@ -81,7 +81,7 @@
 | Category | Tool(s) Used |
 |----------|-------------|
 | Data Storage |CSV files, Excel (.xlsx)|
-| Data Processing |Excel|
+| Data Processing |Power Query|
 | Analysis |Excel, Power BI DAX measures|
 | Visualization |Power BI|
 | Version Control |Git, GitHub|
@@ -93,6 +93,29 @@
 ## 4. Repository Structure
 
 ```
+[telco-customer-churn]/
+│
+├── data/
+│   ├── raw/                  # WA_Fn-UseC_-Telco-Customer-Churn.csv - Original, unmodified source data, never edited
+│   ├── processed/            # telco_churn_cleaned.csv - Cleaned and transformed data
+│   └── external/             # (none was used in this project) 
+│
+├── notebooks/                # (not used - analysis was in Power BI) 
+│
+├── scripts/                  # (not used - cleaning was in Power Query) 
+├── queries/                  # (not used - no SQL in this project) 
+│
+├── reports/                  # Telco Customer Churn Dashboard.pdf - Final outputs: PDFs, slide decks, Word docs
+│
+├── visuals/                  # home-page.png, dasboard-overview.png - Exported charts, dashboard screenshots, ERD diagrams
+│
+├── docs/                     # project-documentation.md - Data dictionaries, schema notes, reference material
+│
+├── project_metadata.yml      # (not used)
+└── README.md                 # You are here
+```
+
+
 
 
 
@@ -110,28 +133,28 @@
 [Output / Visualisation / Reporting]
 ```
 
-1. **Source:** Superstore Sales Dataset (CSV file, 2.3MB), gotten from Kaggle.com.
-2. **Ingestion:** I loaded the CSV file into Excel for cleaning, then imported into Power BI Desktop.
-3. **Cleaning:** I checked for duplicates, missing values and errors. None was found (dataset was already cleaned).
-4. **Transformation:** In Power BI, I created measures for Total Sales, Total Profit, Profit Margin, and Avg Discount.
-5. **Analysis:** I compared sales and profit by Year, Category, and Region. I also analyzed Top 10 profit-making vs Top 10 loss-making products, and checked Discount vs Profit to see how discounts affect profit.
-6. **Output:** A 2-page interactive Power BI dashboard - Page 1 is the Cover Page, Page 2 is the main dashboard with KPI cards, slicers, charts, and Top 10 / Bottom 10 tables. Screenshots are saved in the `visuals/` folder. 
-
+1. **Source:** WA_Fn-UseC_-Telco-Customer-Churn.csv from Kaggle. 7,043 rows, 21 columns.
+2. **Ingestion:** I loaded the CSV file into Power BI Desktop via Get Data > Text/CSV.
+3. **Cleaning:** I removed 11 rows with blank TotalCharges in Power Query. 7,043 -> 7,032 rows. Checked for duplicates, missing values, and errors.
+4. **Transformation:** I created DAX measures in Power BI: Total Customers, Churned Customers, Churned Rate %, and Revenue Lost.
+5. **Analysis:** Descriptive analysis in Power BI - churn by Contract, Tenure, Payment Method, Internet Service and Monthly Charges. No Python or SQL used.
+6. **Output:** A 2-page interactive Power BI dashboard. Screenshots in `visuals/` folder.
 ---
 
 ## 6. Analysis & Metrics
 
 ### Analytical Approach
 
-This was an exploratory, descriptive analysis. I did not test a fixed hypothesis. I started with business questions - which categories, regions, and products drive sales and profit, and how discounts affect profit - then I explored the data in Power BI to find patterns and answer those questions with charts.
+This was an exploratory, descriptive analysis. I did not test a formal hypothesis or build a prediction model. I explored patterns in the data to answer: who is churning, and what do churned customers have in common?
 
 ### Key Metrics Defined
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `Total Sales` | Total money from all orders | Shows overall size of the business |
-| `Total Profit` | Sales minus costs across all orders | Shows if business is actually making money |
-| `Profit Margin` | Total Profit divided by Total Sales | Shows how much profit business keep from every $1 of sales |
+| `Total Customers` | Count of all customers after cleaning = 7,032 | Shows the total customers in the file after cleaning |
+| `Churned Customers` | Count where churn = Yes = 1,869 | Shows how many customers were lost |
+| `Churn Rate %` | Churned Customers / Total Customers = 26.5% | Main KPI - answers how bad is churn? |
+| `Revenue Lost` | Sum of TotalCharges for churned customers | shows total lifetime money lost from customers that left |
 
 ### Methods Used
 
