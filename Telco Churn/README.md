@@ -158,31 +158,28 @@ This was an exploratory, descriptive analysis. I did not test a formal hypothesi
 
 ### Methods Used
 
-- Descriptive analysis: Summed sales, profit, and orders by Year, Category, Region, and Product
-- Visual comparison: Used line charts, bar charts, and donut charts in Power BI to compare groups over time
-- Ranking: Ranked Top 10 profit-making vs Top 10 loss-making products to find winners and losers
-- Correlation check: Compared Discount vs Profit to see if higher discounts are linked to lower profit
-
+- Segmentation / grouping by Contract, Tenure, Payment Method, Internet Service, and Monthly Charges 
+- Comparison of churn rate across groups using charts
+- Visual exploration in Power BI to spot patterns 
 ---
 
 ## 7. Key Insights
 
-**Insight 1: Technology drives the business, Furniture drags profit**
+**Insight 1: Month-to-month contracts churn the most**
 
-Technology is the top-performing product category for both sales and profit. Furniture has high sales but lower profit, which suggests high costs or heavy discounts are eating its profit.
+Customers on Month-to-month contracts have a much higher churn rate than those on One-year or Two-year contracts. This suggests customers with no long-term commitment leave easily.
 
-**Insight 2: The West region carries the business**
+**Insight 2: New customers leave early**
 
-The West region leads with $108.42k in profit, which is 37.9% of total profit. It outperforms East, Central, and South. The business should protect and grow the West while investigating why Central and South are lagging.
+Customers with low tenure (0-12 months) churn more than long-term customers. This suggests the first year is the riskiest period.
 
-**Insight 3: Discounts are hurting profit**
+**Insight 3: Electronic check users churn more**
 
-Products with high discounts, especially in Furniture and Office Supplies, appear in the Top 10 loss-making products list. This suggests that higher discounts are linked to lower profit, and some discounts are too high.
+Customers who pay with Electronic check have a higher churn rate than those who pay with Credit card, Bank transfer, or Mailed check. This suggests payment experience or customer type plays a role.
 
-**Insight 4: A few products make most of the profit, a few lose most of it**
+**Insight 4: Fiber Optic + higher Monthly Charges = higher churn**
 
-Profit is not spread evenly. The Top 10 profit-making products drive a large share of the $286.40k total profit, while the Top 10 loss-making products pull it down. Focusing on the winners and fixing or stopping the losers would improve the overall 12.5% profit margin.
-
+Customers with Fiber Optic internet and higher MonthlyCharges churn more than DSL customers. This suggests price and service value may be pushing customers away.
 ---
 
 ## 8. Recommendations
