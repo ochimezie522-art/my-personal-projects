@@ -82,7 +82,7 @@
 | Category | Tool(s) Used |
 |----------|-------------|
 | Data Storage |CSV files, Excel (.xlsx)|
-| Data Processing |Excel|
+| Data Processing |Excel, Power Query|
 | Analysis |Excel, Power BI DAX measures|
 | Visualization |Power BI|
 | Version Control |Git, GitHub|
@@ -93,37 +93,43 @@
 
 ## 4. Repository Structure
 
-```
-[superstore-sales-analysis]/
+[superstore sales analysis]/
 
-## Overview
-This project analyzes Superstore sales data to understand sales performance, profitability, customer trends, and presents the findings in an interactive Power BI dashboard.
+│
+├── data/
 
-## Business Questions
-- Which products and categories drive the most sales and profit?
-- Which regions are sales performing best?
-- How do sales trend over time?
+│   ├── raw/                  # Sample - Superstore.csv - Original, unmodified source data,  never edited
 
-## Tools Used
-- Power BI - Dashboard & Visualization
-- Excel - Data Cleaning and Validation
-- GitHub - Project Documentation
+│   ├── processed/            # (not available - dataset was already cleaned)
 
-## Key Insights
-- Technology is the top-performing product category
-- The West region leads in sales and generates the highest profit
-- Sales grew steadily from 2014 to 2017, with the strongest growth in 2016 to 2017
+│   └── external/             # (not available)
 
-## Files
-- `data/` - Raw sales data
-- `dashboard/` - Power BI file (.pbix) & dashboard PDF
-- `visuals/` - Dashboard screenshots
+│
+├── notebooks/                # (not used - analysis was in Power BI)
 
-## How to View Dashboard File
-1. Open the `dashboard/` folder
-2. Download the `.pbix` file
-3. Open it in Power BI Desktop
+│
+├── scripts/                  # (not used - cleaning was in Power Query)
 
+│
+├── queries/                  # (not used - no SQL in this project)
+
+│
+├── reports/                  # Superstore Sales Analysis Dashboard.pdf - Final outputs: PDFs, slide decks, Word docs
+
+│
+├── visuals/                  # superstore home-page.png, superstore dashboard-overview.png - Exported charts, dashboard screenshots, ERD diagrams
+
+│
+├── docs/                     # (not used)
+
+├── project_metadata.yml      # (not used)
+
+└── README.md                 # You are here
+
+
+
+
+---
 
 ## 5. Data Workflow
 
@@ -136,9 +142,9 @@ This project analyzes Superstore sales data to understand sales performance, pro
 [Analysis / Modelling / Querying]
       ↓
 [Output / Visualisation / Reporting]
-```
 
-1. **Source:** Superstore Sales Dataset (CSV file, 2.3MB), gotten from Kaggle.com.
+
+1. **Source:** Sample - Superstore.csv from Kaggle.
 2. **Ingestion:** I loaded the CSV file into Excel for cleaning, then imported into Power BI Desktop.
 3. **Cleaning:** I checked for duplicates, missing values and errors. None was found (dataset was already cleaned).
 4. **Transformation:** In Power BI, I created measures for Total Sales, Total Profit, Profit Margin, and Avg Discount.
