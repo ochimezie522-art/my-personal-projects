@@ -144,7 +144,7 @@
 [Output / Visualisation / Reporting]
 
 
-1. **Source:** Sample - Superstore.csv from Kaggle. 9,995 rows, 21 columns 
+1. **Source:** Sample - Superstore.csv from Kaggle. 9,994 rows, 21 columns 
 2. **Ingestion:** I loaded the CSV file into Excel for cleaning, then imported into Power BI Desktop.
 3. **Cleaning:** I checked for duplicates, missing values and errors. None was found (dataset was already cleaned).
 4. **Transformation:** In Power BI, I created measures for Total Sales, Total Profit, Profit Margin, and Avg Discount.
