@@ -92,34 +92,46 @@
 
 ## 4. Repository Structure
 
-```
+
 [telco-customer-churn]/
+
 │
 ├── data/
+
 │   ├── raw/                  # WA_Fn-UseC_-Telco-Customer-Churn.csv - Original, unmodified source data, never edited
-│   ├── processed/            # telco_churn_cleaned.csv - Cleaned and transformed data
-│   └── external/             # (none was used in this project) 
+
+│   ├── processed/            # telco_churn_cleaned.xlsx - Cleaned and transformed data
+
+│   └── external/             # (none was used in this project)
+
 │
-├── notebooks/                # (not used - analysis was in Power BI) 
+├── notebooks/                # (not used - analysis was in Power BI)
+
 │
-├── scripts/                  # (not used - cleaning was in Power Query) 
-├── queries/                  # (not used - no SQL in this project) 
+├── scripts/                  # (not used - cleaning was in Power Query)
+
+├── queries/                  # (not used - no SQL in this project)
+
 │
 ├── reports/                  # Telco Customer Churn Dashboard.pdf - Final outputs: PDFs, slide decks, Word docs
+
 │
-├── visuals/                  # home-page.png, dasboard-overview.png - Exported charts, dashboard screenshots, ERD diagrams
+├── visuals/                  # telco home-page.png, telco dasboard-overview.png - Exported charts, dashboard screenshots, ERD diagrams
+
 │
-├── docs/                     # project-documentation.md - Data dictionaries, schema notes, reference material
+├── docs/                     # (not used)
+
 │
 ├── project_metadata.yml      # (not used)
+
 └── README.md                 # You are here
 
 
 
 
 
+---
 
-```
 ## 5. Data Workflow
 
 [Data Source(s)]
@@ -131,16 +143,17 @@
 [Analysis / Modelling / Querying]
       ↓
 [Output / Visualisation / Reporting]
-```
+
 
 1. **Source:** WA_Fn-UseC_-Telco-Customer-Churn.csv from Kaggle. 7,043 rows, 21 columns.
 2. **Ingestion:** I loaded the CSV file into Power BI Desktop via Get Data > Text/CSV.
-3. **Cleaning:** I removed 11 rows with blank TotalCharges in Power Query. 7,043 -> 7,032 rows. Checked for duplicates, missing values, and errors.
-4. **Transformation:** I created DAX measures in Power BI: Total Customers, Churned Customers, Churned Rate %, and Revenue Lost.
+3. **Cleaning:** I removed 11 rows with blank TotalCharges in Power Query. 7,043 -> 7,032 rows. Checked for duplicates, missing values and errors.
+4. **Transformation:** I created DAX measures in Power BI: Total Customers, Churned Customers, Churned Rate %, and Revenue Lost then added a conditional column for Tenure, where tenure was categorized in groups of 0-12 months, 12-24 months, and 24+ months. I also created a calculated column in Power BI for MonthlyCharges, breaking it down into categories ($0-35, $36-70, $71-100, $100+). 
 5. **Analysis:** Descriptive analysis in Power BI - churn by Contract, Tenure, Payment Method, Internet Service and Monthly Charges. No Python or SQL used.
 6. **Output:** A 2-page interactive Power BI dashboard. Screenshots in `visuals/` folder.
 
-```
+---
+
 ## 6. Analysis & Metrics
 
 ### Analytical Approach
@@ -182,29 +195,30 @@ Customers who pay with Electronic check have a higher churn rate than those who 
 Customers with Fiber Optic internet and higher MonthlyCharges churn more than DSL customers. This suggests price and service value may be pushing customers away.
 
 ---
+
 ## 8. Recommendations
 
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | Review and cap discounts on Furniture and Office Supplies, especially for products in the Top 10 loss-making list. Do not give high discounts without approval | Insight 3 - Discounts are hurting profit | Sales Manager |
-| Medium | Protect and grow the West region, and push Technology products more in Central and South to copy what is working in the West | Insight 1 and 2 - Technology leads, West carries the business | Regional / Marketing Manager |
-| Low | Review the Top 10 loss-making products and track Profit Margin monthly in Power BI, so the team can see early if discounts are eating profit again | Insight 4 - A few products lose most of the profit, margin is only 12,5% | Data Analyst / Product Manager |
+| High | Offer discount / incentive to move Month-to-month customers to One-year or Two-year contracts | Insight 1 | Retention Team |
+| Medium | Create a welcome / onboarding program for new customers in first 12 months | Insight 2 | Customer Success Team |
+| Low | Review Fiber Optic pricing and service quality, offer bundle or support check-in | Insight 4 | Product / Pricing Team |
 
 ---
 
 ## 9. Assumptions & Limitations
 
 ### Assumptions
-- The data in the Superstore file is correct and complete. I treated Sales, Profit, Discount, and Dates as given without being able to verify them with the real company.
-- Profit is calculated as Sales minus Cost. I accepted the Profit column as given and did not recalculate costs.
-- The analysis focuses on 2014-2017 sales data in the file. I assumed this period is enough to show sales and profit trends.
+- Churn = Yes means the customer has left and will not return.
+- The data is a snapshot in time and represents the full customer base at that time.
+- TotalCharges and MonthlyCharges are recorded correctly, except the 11 blank rows which were removed during cleaning.
 
 ### Limitations
-- The dataset does not include customer age, customer feedback, or marketing costs. So I could not analyze why customers chose a product or how much was spent on advertising to get them.
-- The dataset does not include stock levels or delivery costs. So I could not analyze if loss-making products were caused by stock or shipping issues.
-- This project looks like past sales only. It does not predict future sales or customer behaviour.
-- The data is from one sample store dataset, not a real life company. So the results may not apply to all retail businesses.
+- No date column, so we cannot see if churn is getting better or worse over time.
+- No reason for churn (e.g. price, service, competitor), so we can show who churns, not why they churn.
+- No prediction model was built, so we cannot predict which current customer will churn next.
+- The data is from one telecom company, so findings may not apply to other companies.
 
 
 ---
