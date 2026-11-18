@@ -47,7 +47,7 @@
 
 **Approach:** I cleaned the dataset in Power BI by removing 11 rows with missing TotalCharges. I then built an interactive Power BI dashboard with KPIs and breakdowns by contract, tenure, internet service, payment method, and monthly charges, with slicers for Contract and InternetService. 
 
-**Outcome:** I found a 26.6% churn rate - 1,869 out of 7,032 customers left, costing an estimated $2,862,927 in lost revenue. Month-to-month customers churned at 42.7% vs only 2,8% for two-year contracts customers, and Fiber optic customers at 61.3% vs 27.8% for DSL. New customers in their first 12 months were the most at-risk group.
+**Outcome:** I found a 26.6% churn rate - 1,869 out of 7,032 customers left, costing an estimated $2,862,927 in lost revenue. Month-to-month customers churned at 42.7% vs only 2.8% for two-year contracts customers, and Fiber optic customers at 41.9% vs 19.0% for DSL. New customers in their first 12 months were the most at-risk group.
 
 ---
 
