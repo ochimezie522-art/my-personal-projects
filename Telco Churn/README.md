@@ -110,7 +110,6 @@
 │
 ├── scripts/                  # (not used - cleaning was in Power Query)
 
-|
 ├── queries/                  # (not used - no SQL in this project)
 
 │
