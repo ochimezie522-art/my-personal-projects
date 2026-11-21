@@ -54,10 +54,10 @@
 ## 2. Objectives
 
 
-- **Primary Objective:** To identify which customers are churning, why they are leaving, and how much lifetime revenue is being lost, so the company can reduce churn and retain revenue.
-- **Secondary Objective 1:** To measure the overall churn rate and the total lifetime revenue represented by churned customers.
-- **Secondary Objective 2:** To find the customer segments with the highest churn risk - by contract type, internet service, tenure, payment method, and monthly charges.
-- **Secondary Objective 3:** To build an interactive Power BI dashboard that lets managers filter by Contract and InternetService to explore churn patterns and take actions.
+- **Primary Objective:** To find out if the amount of time a student spends on social media is linked to how well they perform in school (GPA), and where the problem becomes more common.
+- **Secondary Objective 1:** To find out how students are distributed across Light, Moderate, Heavy, and Extreme use, and how GPA changes as daily usage increases.
+- **Secondary Objective 2:** To find how sleep is linked to both social media use and grades - do heavy users sleep less, and do students who sleep well score better?
+- **Secondary Objective 3:** To find out if stress and mental wellbeing change the relationship between social media and grades, and if the choice of platform (Instagram, Tiktok, etc.) affects grades on its own - or if total time is what matters, so we can identify which group or groups need attention most.
 
 ---
 
