@@ -1,5 +1,5 @@
-# Telco Customer Churn Analysis
-> *I analyzed 7,032 telecom customers and built an interactive dashboard that uncovers why 26.6% of customers churned, representing $2.8m in lifetime revenue. So the company can target high-risk month-to-month and Fiber optic customers early and retain revenue.*
+# Impact of Social Media Usage on Academic Performance
+> *I analyzed 4,500 students and built a Power BI dashboard showing how extreme users of social media platforms score 0.73 GPA lower than light users, proving that hours spent on social media usage and duration of sleep - not the platform being used - hurt grades, so parents and schools know what to fix .*
 
 ---
 
@@ -41,13 +41,13 @@
  
 
 
-**Context:** A telecom company was losing a large number of its customers but did not know which category of customers were leaving, why they were leaving, or how much revenue was being lost. I used the Telco Customer Churn dataset with 7,032 customers to investigate the problem. 
+**Context:** Students spend hours daily on social media, schools and parents worry it is hurting grades and affecting their academic performance - but it was not clear if the problem was the various apps being used, the hours spent, or the timing. 
 
-**Problem Statement:** Which customer segments have the highest churn rate, and what factors - contract type, internet service, payment method, and monthly charges - are driving customers to leave?
+**Problem Statement:** Does social media usage affect academic performance, and if so, is it the platform, the amount of time, or late-night use and sleep loss that matters most?
 
-**Approach:** I cleaned the dataset in Power BI by removing 11 rows with missing TotalCharges. I then built an interactive Power BI dashboard with KPIs and breakdowns by contract, tenure, internet service, payment method, and monthly charges, with slicers for Contract and InternetService. 
+**Approach:** I analyzed 4,500 students in Excel & Power BI, grouped them into Light, Moderate, Heavy, and Extreme users, and built a 3-page interactive Power BI dashboard comparing GPA by usage, sleep duration, platform, academic level, and late-night use.
 
-**Outcome:** I found a 26.6% churn rate - 1,869 out of 7,032 customers left, costing an estimated $2,862,927 in lost revenue. Month-to-month customers churned at 42.7% vs only 2.8% for two-year contracts customers, and Fiber optic customers at 41.9% vs 19.0% for DSL. New customers in their first 12 months were the most at-risk group.
+**Outcome:** Majority of students who use social media a lot got lower grades. Light users got 3.72 GPA, Extreme users got 2.99 GPA - that's a 0.73 difference. The app didn't matter, all apps are about the same in GPA. What mattered is how many hours spent and how much sleep was lost.
 
 ---
 
