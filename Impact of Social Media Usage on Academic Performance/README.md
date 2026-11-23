@@ -70,10 +70,10 @@
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** |Telco Customer Churn dataset from Kaggle. 7,032 customers after cleaning. Analysis of churn by contract type, internet service, tenure group, payment method, and monthly charges. KPIs: Total Customers, Churned Customers, Churn Rate, and TotalCharges of churned customers. Interactive dashboard with Contract and InternetService slicers.|
-| **Out of Scope** |No churn prediction / machine learning model - this is descriptive analysis, not predictive. No customer names, call logs, network quality, or customer satisfaction data - they were not in the dataset. No causal claim that Fiber optic causes churn, only that it is associated with higher churn.|
-| **Time Period** |No calendar dates in the dataset. It is a cross-sectional snapshot of customers. Tenure ranges from 0 to 72 months with the company.|
-| **Granularity** |One row = one customer. All analysis is at customer level, then aggregated by segment.|
+| **In Scope** |4,500 students aged 15-26 (High School, Undergraduate, Postgraduate). 16 columns: Students ID, Age, Gender, Academic Level, Primary Platform, Daily Usage Hours, Weekend Extra Hours, Device Type, Late-Night Usage, Sleep Duration, Sleep Quality Score, Social Comparison Frequency, Perceived Stress Score, Mental Health Index, GPA (0-4), and Overall Impact (Beneficial / Neutral / Negative - self-reported). Plus 3 derived columns created for analysis: Usage Category, Sleep Category, Total Weekly Usage Hours. Analysis of GPA by usage, sleep, platform, academic level, late-night use, and overall impact.|
+| **Out of Scope** |Proving causation - this is a one-time survey, so it shows association, not that social media causes lower grades. Predicting future grades, tracking students over time, and analyzing what students actually do on each app (chatting vs studying vs entertainment) were excluded because that data was not collected.|
+| **Time Period** |One-time survey / cross-sectional snapshot. No date range in the dataset itself.|
+| **Granularity** |Row-level: 1 row = 1 student. All analysis is aggregated from student-level records into groups - Usage Category (Light / Moderate / Heavy / Extreme), Sleep Category, Platform, and Academic Level.|
 
 ### Tools & Technologies
 
@@ -81,8 +81,8 @@
 | Category | Tool(s) Used |
 |----------|-------------|
 | Data Storage |CSV files, Excel (.xlsx)|
-| Data Processing |Power Query|
-| Analysis |Excel, Power BI DAX measures|
+| Data Processing |Excel|
+| Analysis |Excel|
 | Visualization |Power BI|
 | Version Control |Git, GitHub|
 | Documentation |Markdown, GitHub README|
@@ -98,17 +98,17 @@
 │
 ├── data/
 
-│   ├── raw/                  # WA_Fn-UseC_-Telco-Customer-Churn.csv - Original, unmodified source data, never edited
+│   ├── raw/                  # Social_media_impact_on_life.csv - Original, unmodified source data, never edited
 
-│   ├── processed/            # telco_churn_cleaned.xlsx - Cleaned and transformed data
+│   ├── processed/            # Social_media_impact_on_life_cleaned-dataset.xlsx - Cleaned and transformed data
 
 │   └── external/             # (none was used in this project)
 
 │
-├── notebooks/                # (not used - analysis was in Power BI)
+├── notebooks/                # (not used - analysis was in Excel)
 
 │
-├── scripts/                  # (not used - cleaning was in Power Query)
+├── scripts/                  # (not used - cleaning was in Excel)
 
 ├── queries/                  # (not used - no SQL in this project)
 
