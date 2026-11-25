@@ -56,7 +56,7 @@
 
 - **Primary Objective:** To find out if the amount of time a student spends on social media is linked to how well they perform in school (GPA), and where the problem becomes more common.
 - **Secondary Objective 1:** To find out how students are distributed across Light, Moderate, Heavy, and Extreme use, and how GPA changes as daily usage increases.
-- **Secondary Objective 2:** To find how sleep is linked to both social media use and grades - do heavy users sleep less, and do students who sleep well score better?
+- **Secondary Objective 2:** To find how sleep is linked to both social media use and grades - do heavy and extreme users sleep less, and do students who sleep well score better?
 - **Secondary Objective 3:** To find out if stress and mental wellbeing change the relationship between social media and grades, and if the choice of platform (Instagram, Tiktok, etc.) affects grades on its own - or if total time is what matters, so we can identify which group or groups need attention most.
 
 ---
@@ -70,7 +70,7 @@
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** |4,500 students aged 15-26 (High School, Undergraduate, Postgraduate). 16 columns: Students ID, Age, Gender, Academic Level, Primary Platform, Daily Usage Hours, Weekend Extra Hours, Device Type, Late-Night Usage, Sleep Duration, Sleep Quality Score, Social Comparison Frequency, Perceived Stress Score, Mental Health Index, GPA (0-4), and Overall Impact (Beneficial / Neutral / Negative - self-reported). Plus 3 derived columns created for analysis: Usage Category, Sleep Category, Total Weekly Usage Hours. Analysis of GPA by usage, sleep, platform, academic level, late-night use, and overall impact.|
+| **In Scope** |4,500 students aged 15-26 (High School, Undergraduate, Postgraduate). 16 columns: Students ID, Age, Gender, Academic Level, Primary Platform, Daily Usage Hours, Weekend Extra Hours, Device Type, Late-Night Usage, Sleep Duration, Sleep Quality Score, Social Comparison Frequency, Perceived Stress Score, Mental Health Index, GPA (0-4), and Overall Impact (Beneficial / Neutral / Negative - self-reported). Plus 3 derived columns created for analysis: Usage Category, Sleep Category, Total Weekly Usage Hours. Analysis of GPA by usage, sleep, platform, academic level and late-night use.|
 | **Out of Scope** |Proving causation - this is a one-time survey, so it shows association, not that social media causes lower grades. Predicting future grades, tracking students over time, and analyzing what students actually do on each app (chatting vs studying vs entertainment) were excluded because that data was not collected.|
 | **Time Period** |One-time survey / cross-sectional snapshot. No date range in the dataset itself.|
 | **Granularity** |Row-level: 1 row = 1 student. All analysis is aggregated from student-level records into groups - Usage Category (Light / Moderate / Heavy / Extreme), Sleep Category, Platform, and Academic Level.|
@@ -149,7 +149,7 @@
 2. **Ingestion:** I loaded the CSV file into Excel for cleaning, then into Power BI for analysis and dashboarding.
 3. **Cleaning:** I checked for duplicates (none was found). Filled 46 missing Perceived Stress Scores and 85 missing GPAs with the median value. I also checked for errors (none was found).
 4. **Transformation:** I created 3 derived columns in Excel: Usage Category (Light / Moderate / Heavy / Extreme from Daily Usage Hours), Sleep Category (from Sleep Duration Hours), and Total Weekly Usage Hours (Daily Usage Hours * 7 + Weekend Extra Hours * 2).
-5. **Analysis:** Descriptive statistics, group comparison by usage, sleep, platform, academic level, and overall impact. Correlation analysis between usage, sleep and GPA.
+5. **Analysis:** Descriptive statistics, group comparison by usage, sleep, platform and academic level. Correlation analysis between usage, sleep and GPA.
 6. **Output:** A 3-page interactive Power BI dashboard (Overview, Statistics Analysis, KPIs).
 
 ---
