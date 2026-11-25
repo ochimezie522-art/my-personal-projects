@@ -100,9 +100,9 @@
 
 │   ├── raw/                  # Sample - Superstore.csv - Original, unmodified source data,  never edited
 
-│   ├── processed/            # (not available - dataset was already cleaned)
+│   ├── processed/            # (not used in this project - dataset was already cleaned)
 
-│   └── external/             # (not available)
+│   └── external/             # (not used in this project)
 
 │
 ├── notebooks/                # (not used - analysis was in Power BI)
