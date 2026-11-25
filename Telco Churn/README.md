@@ -166,7 +166,7 @@ This was an exploratory, descriptive analysis. I did not test a formal hypothesi
 |--------|--------------------------|----------------|
 | `Total Customers` | Count of all customers after cleaning = 7,032 | Shows the total customers in the file after cleaning |
 | `Churned Customers` | Count where churn = Yes = 1,869 | Shows how many customers were lost |
-| `Churn Rate %` | Churned Customers / Total Customers = 26.5% | Main KPI - answers how bad is churn? |
+| `Churn Rate %` | Churned Customers / Total Customers = 26.6% | Main KPI - answers how bad is churn? |
 | `Revenue Lost` | Sum of TotalCharges for churned customers | shows total lifetime money lost from customers that left |
 
 ### Methods Used
