@@ -164,35 +164,37 @@ This was an exploratory analysis. I did not start with one hypothesis to prove. 
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `Total Customers` | Count of all customers after cleaning = 7,032 | Shows the total customers in the file after cleaning |
-| `Churned Customers` | Count where churn = Yes = 1,869 | Shows how many customers were lost |
-| `Churn Rate %` | Churned Customers / Total Customers = 26.5% | Main KPI - answers how bad is churn? |
-| `Revenue Lost` | Sum of TotalCharges for churned customers | shows total lifetime money lost from customers that left |
+| `Avg Daily Usage Hours` | Average hours a student uses social media on a normal day | It is the main behaviour we are testing - if higher daily use is linked to lower GPA and less sleep |
+| `Total Weekly Usage Hours` | Daily Usage Hours * 7 + Weekend Extra Hours * 2 | Gives the full weekly load, not just one day |
+| `Avg GPA` | Average Academic Performance GPA, on a 0-4 scale | The main academic outcome we are trying to explain |
+| `Avg Sleep Duration` | Average hours a student sleeps per night | Shows if heavy and extreme use is eating into sleep |
 
 ### Methods Used
 
-- Segmentation / grouping by Contract, Tenure, Payment Method, Internet Service, and Monthly Charges 
-- Comparison of churn rate across groups using charts
-- Visual exploration in Power BI to spot patterns 
+- Descriptive statistics: Averages, counts, and percentages to describe the 4,500 students.
+- Group comparison: I compared GPA and sleep across Usage Category, Platform, Academic Level, Late-Night Use, and Overall Impact.
+- Correlation analysis: I checked how strongly usage moves with GPA and sleep.
+- Visual analysis: Bar, donut, and scatter charts in Power BI to spot 6-hour tipping point.
+
 ---
 
 ## 7. Key Insights
 
-**Insight 1: Month-to-month contracts churn the most**
+**Insight 1: The 6-hour tipping point**
 
-Customers on Month-to-month contracts have a much higher churn rate than those on One-year or Two-year contracts. This suggests customers with no long-term commitment leave easily.
+GPA stays fairly stable at 0-5 hours of daily use (around 3.2 - 3.4), but drops sharply after 6 hours - down to around 2.5 - 2.6 for mainly Extreme users (9h+). This suggests 6 hours is the threshold where social media starts to seriously hurt academic performance.
 
-**Insight 2: New customers leave early**
+**Insight 2: It is not the app - it is how much you use it**
 
-Customers with low tenure (0-12 months) churn more than long-term customers. This suggests the first year is the riskiest period.
+There is no detectable difference in GPA by platform - YouTube, TikTok, Instagram, LinkedIn, X, Snapchat, and Reddit all average 3.42 - 3.43. The difference is in usage category: light users average 3.72, Moderate 3.58, Heavy 3.36, and Extreme users 2.99. So grades do not drop because of which app students use, it drops because of how long they use it.
 
-**Insight 3: Electronic check users churn more**
+**Insight 3: Late-night use hurts sleep even more**
 
-Customers who pay with Electronic check have a higher churn rate than those who pay with Credit card, Bank transfer, or Mailed check. This suggests payment experience or customer type plays a role.
+Students who use social media late at night sleep less and have lower sleep quality and lower GPA than non late-night users with similar total usage. When students use it also matters, not just how long.
 
-**Insight 4: Fiber Optic + higher Monthly Charges = higher churn**
+**Insight 4: Students know it - but still do it**
 
-Customers with Fiber Optic internet and higher MonthlyCharges churn more than DSL customers. This suggests price and service value may be pushing customers away.
+Most students who reported their overall impact as "Negative" were Heavy / Extreme users, while Light users mostly reported "Beneficial" or "Neutral". Students are aware of the harm, which means awareness alone is not enough - they need practical limits and support.
 
 ---
 
@@ -201,9 +203,9 @@ Customers with Fiber Optic internet and higher MonthlyCharges churn more than DS
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | Offer discount / incentive to move Month-to-month customers to One-year or Two-year contracts | Insight 1 | Retention Team |
-| Medium | Create a welcome / onboarding program for new customers in first 12 months | Insight 2 | Customer Success Team |
-| Low | Review Fiber Optic pricing and service quality, offer bundle or support check-in | Insight 4 | Product / Pricing Team |
+| High | Promote a "No Late-Night Scroll" rule - no social media 1 hour before bed, plus sleep hygiene workshops in hostels / homes | Insight 3 | School Health / Counselling Unit + Parents |
+| Medium | Focus interventions on time spent, not banning specific apps - since all platforms average the same GPA (3.42 - 3.43) | Insight 2 | School Management / Teachers + Parents
+| Low | Add termly check-ins and peer support for Heavy / Extreme Users - self-help groups, counselling, and study support, since awareness alone is not changing behaviour | Insight 4 | Counselling Unit + Students Mentors |
 
 ---
 
