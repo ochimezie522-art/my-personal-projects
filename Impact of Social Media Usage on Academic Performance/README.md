@@ -82,7 +82,7 @@
 |----------|-------------|
 | Data Storage |CSV files, Excel (.xlsx)|
 | Data Processing |Excel|
-| Analysis |Excel|
+| Analysis |Power BI|
 | Visualization |Power BI|
 | Version Control |Git, GitHub|
 | Documentation |Markdown, GitHub README|
@@ -105,7 +105,7 @@
 │   └── external/             # (none was used in this project)
 
 │
-├── notebooks/                # (not used - analysis was in Excel)
+├── notebooks/                # (not used - analysis was in Power BI)
 
 │
 ├── scripts/                  # (not used - cleaning was in Excel)
@@ -145,12 +145,12 @@
 [Output / Visualisation / Reporting]
 
 
-1. **Source:** WA_Fn-UseC_-Telco-Customer-Churn.csv from Kaggle. 7,043 rows, 21 columns.
-2. **Ingestion:** I loaded the CSV file into Power BI Desktop via Get Data > Text/CSV.
-3. **Cleaning:** I removed 11 rows with blank TotalCharges in Power Query. 7,043 -> 7,032 rows. Checked for duplicates, missing values and errors.
-4. **Transformation:** I created DAX measures in Power BI: Total Customers, Churned Customers, Churned Rate %, and Revenue Lost then added a conditional column for Tenure, where tenure was categorized in groups of 0-12 months, 12-24 months, and 24+ months. I also created a calculated column in Power BI for MonthlyCharges, breaking it down into categories ($0-35, $36-70, $71-100, $100+). 
-5. **Analysis:** Descriptive analysis in Power BI - churn by Contract, Tenure, Payment Method, Internet Service and Monthly Charges. No Python or SQL used.
-6. **Output:** A 2-page interactive Power BI dashboard. Screenshots in `visuals/` folder.
+1. **Source:** Social_media_impact_on_life.csv from Kaggle. 4,500 rows, 16 columns.
+2. **Ingestion:** I loaded the CSV file into Excel for cleaning, then into Power BI for analysis and dashboarding.
+3. **Cleaning:** I checked for duplicates (none was found). Filled 46 missing Perceived Stress Scores and 85 missing GPAs with the median value. I also checked for errors (none was found).
+4. **Transformation:** I created 3 derived columns in Excel: Usage Category (Light / Moderate / Heavy / Extreme from Daily Usage Hours), Sleep Category (from Sleep Duration Hours), and Total Weekly Usage Hours (Daily Usage Hours * 7 + Weekend Extra Hours * 2).
+5. **Analysis:** Descriptive statistics, group comparison by usage, sleep, platform, academic level, and overall impact. Correlation analysis between usage, sleep and GPA.
+6. **Output:** A 3-page interactive Power BI dashboard (Overview, Statistics Analysis, KPIs).
 
 ---
 
@@ -158,7 +158,7 @@
 
 ### Analytical Approach
 
-This was an exploratory, descriptive analysis. I did not test a formal hypothesis or build a prediction model. I explored patterns in the data to answer: who is churning, and what do churned customers have in common?
+This was an exploratory analysis. I did not start with one hypothesis to prove. I explored the data to find patterns: first described the students (how much they use social media, how they sleep, their GPA), then compared groups (light vs extreme users, late-night vs non-late-night, platform vs platform), and then checked which factors moved together with GPA and Sleep using Correlation.
 
 ### Key Metrics Defined
 
