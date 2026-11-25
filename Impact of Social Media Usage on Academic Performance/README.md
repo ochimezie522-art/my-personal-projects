@@ -212,15 +212,14 @@ Most students who reported their overall impact as "Negative" were Heavy / Extre
 ## 9. Assumptions & Limitations
 
 ### Assumptions
-- Churn = Yes means the customer has left and will not return.
-- The data is a snapshot in time and represents the full customer base at that time.
-- TotalCharges and MonthlyCharges are recorded correctly, except the 11 blank rows which were removed during cleaning.
+- I assumed students reported their daily usage hours, sleep hours, GPA, stress, and mental health truthfully, as I could not verify them against school records or screen-time logs.
+- I assumed GPA on a 0-4 scale means the same thing for High School, Undergraduate, and Postgraduate students, to allow comparison across academic levels.
+- I assumed the Daily Usage Hours and Sleep Duration reported are for a normal / typical day, not only exam periods, holidays, or weekends when habits change a lot.
 
 ### Limitations
-- No date column, so we cannot see if churn is getting better or worse over time.
-- No reason for churn (e.g. price, service, competitor), so we can show who churns, not why they churn.
-- No prediction model was built, so we cannot predict which current customer will churn next.
-- The data is from one telecom company, so findings may not apply to other companies.
+- The data shows usage moves together with GPA and sleep, but it cannot prove heavy/extreme social media use causes low GPA.
+- The dataset is cross-sectional (one point in time for 4,500 students). We cannot see how a student's grades change as their usage changes over time.
+- Usage hours, sleep, and mental health are self-reported and may be under or over-reported.
 
 
 ---
