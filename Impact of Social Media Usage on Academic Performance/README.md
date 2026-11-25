@@ -100,7 +100,7 @@
 
 │   ├── raw/                  # Social_media_impact_on_life.csv - Original, unmodified source data, never edited
 
-│   ├── processed/            # Social_media_impact_on_life_cleaned-dataset.xlsx - Cleaned and transformed data
+│   ├── processed/            # Social_media_impact_on_life_cleaned.xlsx - Cleaned and transformed data
 
 │   └── external/             # (none was used in this project)
 
@@ -113,10 +113,10 @@
 ├── queries/                  # (not used - no SQL in this project)
 
 │
-├── reports/                  # Telco Customer Churn Dashboard.pdf - Final outputs: PDFs, slide decks, Word docs
+├── reports/                  # Impact of Social Media Usage on Academic Performance Dashboard.pdf - Final outputs: PDFs, slide decks, Word docs
 
 │
-├── visuals/                  # telco home-page.png, telco dasboard-overview.png - Exported charts, dashboard screenshots, ERD diagrams
+├── visuals/                  # impact home-page.png, impact dashboard-overview.png, impact statistics-analysis.png - Exported charts, dashboard screenshots, ERD diagrams
 
 │
 ├── docs/                     # (not used)
