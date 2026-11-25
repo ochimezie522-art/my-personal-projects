@@ -149,7 +149,7 @@
 3. **Cleaning:** I checked for duplicates, missing values and errors. None was found (dataset was already cleaned).
 4. **Transformation:** In Power BI, I created measures for Total Sales, Total Profit, Profit Margin, and Avg Discount.
 5. **Analysis:** I compared sales and profit by Year, Category, and Region. I also analyzed Top 10 profit-making vs Top 10 loss-making products, and checked Discount vs Profit to see how discounts affect profit.
-6. **Output:** A 2-page interactive Power BI dashboard - Page 1 is the Cover Page, Page 2 is the main dashboard with KPI cards, slicers, charts, and Top 10 / Bottom 10 tables. Screenshots are saved in the `visuals/` folder. 
+6. **Output:** A 2-page interactive Power BI dashboard - Page 1 is the Cover Page, Page 2 is the main dashboard with KPI cards, slicers, charts, and Top 10 / Bottom 10 tables. Screenshots were saved in the `visuals/` folder. 
 
 ---
 
