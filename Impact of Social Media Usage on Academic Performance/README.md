@@ -150,7 +150,7 @@
 3. **Cleaning:** I checked for duplicates (none was found). Filled 46 missing Perceived Stress Scores and 85 missing GPAs with the median value. I also checked for errors (none was found).
 4. **Transformation:** I created 3 derived columns in Excel: Usage Category (Light / Moderate / Heavy / Extreme from Daily Usage Hours), Sleep Category (from Sleep Duration Hours), and Total Weekly Usage Hours (Daily Usage Hours * 7 + Weekend Extra Hours * 2).
 5. **Analysis:** Descriptive statistics, group comparison by usage, sleep, platform and academic level. Correlation analysis between usage, sleep and GPA.
-6. **Output:** A 3-page interactive Power BI dashboard (Overview, Statistics Analysis, KPIs).
+6. **Output:** A 3-page interactive Power BI dashboard (Overview, Statistics Analysis, KPIs). Screenshots were saved in `visuals/` folder.
 
 ---
 
