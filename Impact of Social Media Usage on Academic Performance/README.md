@@ -100,7 +100,7 @@
 
 │   ├── raw/                  # Social_media_impact_on_life.csv - Original, unmodified source data, never edited
 
-│   ├── processed/            # Social_media_impact_on_life_cleaned.xlsx - Cleaned and transformed data
+│   ├── processed/            # Social_media_impact_on_life_cleaned_dataset.xlsx - Cleaned and transformed data
 
 │   └── external/             # (none was used in this project)
 
